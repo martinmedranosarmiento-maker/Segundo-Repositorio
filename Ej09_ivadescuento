@@ -1,6 +1,6 @@
 #CBTIS 89 
 #Programacion 3°B Matutino
-#Valenzuela Vargas Angel
+#Martin Medrano Sarmiento
 
 #importamos la biblioteca tkinter, que permite crear interfaces graficas en python
 import tkinter as tk
@@ -122,3 +122,4 @@ etiqueta_resultado.pack(pady=15)
 
 #inicia el ciclo principal de la aplicacion
 ventana.mainloop()
+
