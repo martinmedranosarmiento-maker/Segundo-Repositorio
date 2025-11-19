@@ -1,6 +1,6 @@
 #CBTIS 89
 #Programacion 3°B T.M
-#Valenzuela Vargas Angel
+#Martin Medrano Sarmiento
 
 import tkinter as tk
 
@@ -20,3 +20,4 @@ boton_confirmar.pack()
 
 # Iniciar la ventana
 ventana.mainloop()
+
