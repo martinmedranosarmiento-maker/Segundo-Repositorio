@@ -1,0 +1,93 @@
+#CBTIS 89 
+#Programacion 3°B Matutino
+#Valenzuela Vargas Angel
+
+#importamos la biblioteca tkinter
+import tkinter as tk
+from tkinter import messagebox
+
+#funcion para cambiar a dolares
+def cambiar_Dolares():
+
+        cantidad=float(entrada_cantidad.get())
+
+        Dolar=cantidad *18.39
+
+        etiqueta_resultado.config(text=f"Dolar (18.39) : ${Dolar: .2f}")
+
+def cambiar_Euros():
+
+        cantidad=float(entrada_cantidad.get())
+
+        Euros=cantidad *21.47
+
+        etiqueta_resultado.config(text=f"Euro (21.47) : ${Euros: .2f}")
+        
+def cambiar_Libras():
+
+        cantidad=float(entrada_cantidad.get())
+
+        Libras=cantidad *24.70
+
+        etiqueta_resultado.config(text=f"Libras (24.70) : ${Libras: .2f}")
+        
+def cambiar_Yenes():
+        
+        cantidad=float(entrada_cantidad.get())
+
+        Yenes=cantidad *0.12
+
+        etiqueta_resultado.config(text=f"Yenes (0.12) : ${Yenes: .2f}")
+
+ventana=tk.Tk()
+ventana.title("Divisas")
+ventana.geometry("300x250")
+
+etiqueta_cantidad = tk.Label (ventana,text="ingresa la cantidad:")
+etiqueta_cantidad.pack(pady=10)
+
+entrada_cantidad=tk.Label(ventana, justify=("center"))
+entrada_cantidad.pack()
+
+btn_Dolar=tk.Button(
+        ventana,
+        text="Convertir a Dolares",
+        command= cambiar_Dolares,
+)
+btn_Dolar.pack(pady=5)
+
+btn_Euro=tk.Button(
+        ventana,
+        text="Convertir a Euros",
+        command= cambiar_Euros,
+)
+btn_Euro.pack(pady=5)
+
+btn_Libras=tk.Button(
+        ventana,
+        text="Convertir a Libras",
+        command= cambiar_Libras,
+)
+btn_Libras.pack(pady=5)
+
+btn_Yenes=tk.Button(
+        ventana,
+        text="Convertir a Yenes",
+        command= cambiar_Yenes,
+)
+btn_Yenes.pack(pady=5)
+
+etiqueta_resultado= tk.Label(
+    ventana,
+    text="", 
+    font=("Arial",12 , "bold")
+)
+etiqueta_resultado.pack(pady=15)
+
+
+ventana.mainloop()
+
+
+
+
+

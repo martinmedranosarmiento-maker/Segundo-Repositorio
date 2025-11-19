@@ -1,0 +1,124 @@
+#CBTIS 89 
+#Programacion 3°B Matutino
+#Valenzuela Vargas Angel
+
+#importamos la biblioteca tkinter, que permite crear interfaces graficas en python
+import tkinter as tk
+from tkinter import messagebox
+
+#Funciones principales 
+
+#Funcion para calcular el iva (impuesto al valor agregado 16%)
+def calcular_iva():
+    try:
+        #obtenemos el valor que el usuario escribio en la caja de texto
+        cantidad = float(entrada_cantidad.get()) #convertimos el texto a numero decimal
+
+        #calculamos el 16% de iva 
+        iva = cantidad * 0.16
+
+        #mostramos el resultado en la etiqueta de resultados
+        etiqueta_resultado.config(text=f"IVA (16%): $ {iva:.2f}")
+
+    #si el usuario no ingresa un numero, mostramos un mensaje de error
+    except ValueError:
+        messagebox.showerror("Error", "por favor ingresa una cantidad valida.")
+
+
+# Funcion para calcular el 10% de descuento
+def calcular_descuento():
+    try:
+        cantidad = float(entrada_cantidad.get())
+
+        #calculamos el iva y descuento
+        descuento = cantidad * 0.10
+
+        #total = cantidad original + iva - descuento
+        total = descuento
+
+        #mostramos el total en pantalla 
+        etiqueta_resultado.config(text=f"total a pagar: ${total:.2f}")
+
+    except ValueError:
+        messagebox.showerror("Error", "Por favor ingresa una cantidad valida")
+
+def calcular_total():
+    try:
+        cantidad= float(entrada_cantidad.get())
+        iva=cantidad*0.16
+        descuento=cantidad*0.10
+
+        total=cantidad+iva-descuento
+
+        etiqueta_resultado.config(text=f"total a pagar: ${total:.2f}")
+    except ValueError:
+        messagebox.showerror("Error", "Por favor ingresa una cantidad valida")
+
+
+#interfaz grafica de la ventana principal 
+
+#creamos la ventana principal
+
+#inicia la aplicacion grafica
+
+ventana=tk.Tk()
+ventana.title("calcular IVA y descuento") #titulo de la ventana 
+ventana.geometry("300x250") #tamaño (ancho x alto)
+ventana .resizable(False, False) #Evita que el usuario cambie el tamaño de la ventana
+
+#Etiqueta y caja de texto
+
+#creamos una etiqueta que indica que debe escribir el usuario
+etiqueta_cantidad = tk.Label(ventana, text="ingresa la cantidad:")
+etiqueta_cantidad.pack(pady=10) # .pack()coloca el elemento y pady da un margen vertcal
+
+#caja de texto donde se ecribira la cantidad 
+entrada_cantidad = tk.Entry (ventana, justify="center") #justify centra el texto
+entrada_cantidad.pack() #se agrega a la ventana
+
+
+#Botones de accion 
+
+# Boton que calcula el iva
+btn_iva = tk.Button(
+    ventana,
+    text="calcular 16% iva",
+    command=calcular_iva,
+    bg="#5F9EA0",fg="#008B8B"#color de fondo
+)
+btn_iva.pack(pady=5)
+
+#boton para calcular el descuento
+btn_descuento = tk.Button(
+    ventana,
+    text="calcular el 10% descuento",
+    command=calcular_descuento,
+    bg="yellow", fg="red"#color de fondo
+)
+btn_descuento.pack(pady=5)
+
+#boton que calcula el total
+btn_total = tk.Button(
+    ventana,
+    text="calcular total a pagar ",
+    command=calcular_total,
+    bg="#ADD8E6",fg="#E0FFFF"# color de fondo
+)
+btn_total.pack(pady=5)
+
+
+#Etiqueta de resultados
+
+#Aqui se mostrara el resusltado despues de presionar el boton
+etiqueta_resultado= tk.Label(
+    ventana,
+    text="", #vacio al inicio
+    font=("Arial",12 , "bold") #tamaño y estilo de letras
+)
+etiqueta_resultado.pack(pady=15)
+
+# Inicio del programa
+
+
+#inicia el ciclo principal de la aplicacion
+ventana.mainloop()
