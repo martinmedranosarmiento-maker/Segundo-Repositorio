@@ -1,6 +1,6 @@
 #CBTIS 89
 #Programacion 3°B Matutino
-#Valenzuela Vargas Angel
+#Martin Medrano Sarmiento
 
 import tkinter as tk
 import os
@@ -50,3 +50,4 @@ lista_figuras.bind("<<ListboxSelect>>", mostrar_imagen)
 
 # Ejecutar
 ventana.mainloop()
+
