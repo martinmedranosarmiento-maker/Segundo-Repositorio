@@ -1,6 +1,6 @@
 #CBTIS 89
 #Programacion 3°B T.M
-#Valenzuela Vargas Angel
+#Martin Medrano Sarmiento
 
 import tkinter as tk 
 
@@ -18,3 +18,4 @@ boton=tk.Button(ventana,text="Saludar",command=Saludar)
 boton.pack(pady=10) 
 
 ventana.mainloop()
+
