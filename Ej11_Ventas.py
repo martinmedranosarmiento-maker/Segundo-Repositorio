@@ -1,6 +1,6 @@
 #CBTIS 89
 #Programacion 3°B Matutino
-#Valenzuela Vargas Angel
+#Martin Medrano Sarmiento
 
 import tkinter as tk
 
@@ -59,3 +59,4 @@ resultado.pack(pady=5)
 
 # Ejecutar la aplicación
 ventana.mainloop()
+
