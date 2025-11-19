@@ -1,6 +1,6 @@
 #CBTIS 89
 #Programacion 3°B T.M
-#Valenzuela Vargas Angel
+#Martin Medrano Sarmiento
 
 import tkinter as tk
 
@@ -36,3 +36,4 @@ boton_mostrar.pack()
 
 # La ventana
 ventana.mainloop()
+
