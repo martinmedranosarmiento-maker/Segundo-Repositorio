@@ -1,6 +1,6 @@
 #CBTIS 89
 #Programacion 3°B T.M
-#Valenzuela Vargas Angel
+#Martin Medrano Sarmiento
 
 import tkinter as tk
 from tkinter import messagebox
@@ -64,3 +64,4 @@ boton_verificar.pack(pady=(10, 15))
 
 # Ejecutar la app
 ventana.mainloop()
+
