@@ -1,6 +1,6 @@
 #CBTIS 89 
 #Programacion 3°B Matutino
-#Valenzuela Vargas Angel
+#Martin Medrano Sarmiento
 
 #importamos la biblioteca tkinter
 import tkinter as tk
@@ -86,6 +86,7 @@ etiqueta_resultado.pack(pady=15)
 
 
 ventana.mainloop()
+
 
 
 
