@@ -1,6 +1,6 @@
 #CBTIS 89
 #Programacion 3°B Matutino
-#Valenzuela Vargas Angel
+#Martin Medrano Sarmiento
 
 import tkinter as tk
 
@@ -47,4 +47,5 @@ etiqueta_resultado=tk.Label(ventana,text="Aun no has seleccionado nada")
 etiqueta_resultado.pack(pady=20)
 
 ventana.mainloop()
+
 
