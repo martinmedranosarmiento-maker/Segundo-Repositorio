@@ -1,6 +1,6 @@
 #CBTIS 89
 #Programacion 3°B Matutino
-#Valenzuela Vargas Angel
+#Martin Medrano Sarmiento
 
 import tkinter as tk
 from tkinter import messagebox
@@ -65,4 +65,5 @@ btn_calcular = tk.Button(ventana, text="Calcular Promedios", command=calcular_pr
 btn_calcular.grid(row=2 + num_materias + 1, column=0, columnspan=5, pady=10)
 
 ventana.mainloop()
+
 
