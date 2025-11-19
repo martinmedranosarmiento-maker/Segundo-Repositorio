@@ -1,6 +1,6 @@
 #CBTIS 89
 #Programacion 3°B T.M
-#Valenzuela Vargas Angel
+#Martin Medrano Sarmiento
 
 import tkinter as tk
 from tkinter import Toplevel
@@ -28,3 +28,4 @@ boton_abrir.pack(pady=20)
 
 # Iniciar el loop principal
 ventana_principal.mainloop()
+
