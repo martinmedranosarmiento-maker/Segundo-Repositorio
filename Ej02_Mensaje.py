@@ -1,6 +1,6 @@
 #CBTIS 89
 #Programacion 3°B T.M
-#Valenzuela Vargas Angel
+#Martin Medrano Sarmiento
 
 import tkinter as tk
 
@@ -30,4 +30,5 @@ etiqueta_resultado = tk.Label(ventana, text="", font=("Arial", 12), fg="blue")
 etiqueta_resultado.pack(pady=5)
 
 ventana.mainloop()
+
 
